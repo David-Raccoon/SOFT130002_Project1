@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Travel - Share your travels!
+    </title>
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav>
+        <a class="nav-options current-options" href="src/html/index.htm">Home</a>
+        <a class="nav-options" href="src/html/browser.htm">Browse</a>
+        <a class="nav-options" href="src/html/search.htm">Search</a>
+        <span class="nav-padding"></span>
+        <span class="nav-options dropdown">
+            <span>My account</span>
+        <span class="dropdown-content">
+                <p>
+                    <img class="nav-icons" src="img/icons/upload.png">
+                    <a class="nav-options" href="src/html/upload.htm">upload</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="img/icons/my_photos.png">
+                    <a class="nav-options" href="src/html/my_photos.htm">my photos</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="img/icons/favor.png">
+                    <a class="nav-options" href="src/html/favor.htm">favor</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="img/icons/login.png">
+                    <a class="nav-options" href="src/html/login.htm">login</a>
+                </p>
+            </span>
+        </span>
+    </nav>
+    <!-- 头图 -->
+    <header>
+        <p class="title">Trevel - Share your travels!</p>
+    </header>
+    <!-- 主体 一些示例图 -->
+    <table class>
+        <tr>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+            <td class="sample">
+                <a href="src/html/detail.htm"><img src="img/square/square-medium/222222.jpg"></a>
+                <p class="sample-title">title</p>
+                <p class="sample-description">description</p>
+            </td>
+        </tr>
+    </table>
+    <!-- 辅助图标 -->
+    <div class="tools">
+        <button onclick="alert('Picture refreshed!')">refresh</button>
+        <button id="jump">top
+            <script>
+                jump.onclick = function () {
+                    scrollTo(0, 0);
+                }
+            </script>
+        </button>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        Contact Us: 18307130214@fudan.edu.cn<br> Copyright &copy; 2020 Web fundamental. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

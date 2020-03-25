@@ -1,0 +1,28 @@
+.login {
+    height: 500px;
+    background-image: url(../../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 250px 400px;
+    font-size: 40px;
+    color: aqua
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+a {
+    color: aquamarine;
+}
+
+.signin-button {
+    margin-top: 3em;
+    width: 10em;
+    height: 2em;
+}

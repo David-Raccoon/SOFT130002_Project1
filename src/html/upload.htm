@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Travel - Picture browser
+    </title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/upload.css" />
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav>
+        <a class="nav-options" href="../../index.htm">Home</a>
+        <a class="nav-options" href="./browser.htm">Browse</a>
+        <a class="nav-options" href="./search.htm">Search</a>
+        <span class="nav-padding"></span>
+        <span class="nav-options current-options dropdown">
+            <span>My account</span>
+        <span class="dropdown-content">
+                <p>
+                    <img class="nav-icons" src="../../img/icons/upload.png">
+                    <a class="nav-options current-options" href="./upload.htm">upload</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="../../img/icons/my_photos.png">
+                    <a class="nav-options" href="./my_photos.htm">my photos</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="../../img/icons/favor.png">
+                    <a class="nav-options" href="./favor.htm">favor</a>
+                </p>
+                <p>
+                    <img class="nav-icons" src="../../img/icons/login.png">
+                    <a class="nav-options" href="./login.htm">login</a>
+                </p>
+            </span>
+        </span>
+    </nav>
+    <!-- 横幅 -->
+    <div class="banner">
+        <p>Travel - Share your travels!</p>
+    </div>
+    <!-- 上传 -->
+    <div>
+        <img id="preview" alt="Photo not selected." />
+        <form id="form" onsubmit="return upload()">
+            <p>Choose a photo</p>
+            <input type="file" accept="image/*" id="file" />
+            <p>Title of the photo</p>
+            <textarea rows="1" cols="100"></textarea>
+            <p>Description of the photo</p>
+            <textarea rows="4" cols="100"></textarea>
+            <p>Screening countries</p>
+            <textarea rows="1" cols="100"></textarea>
+            <p>Screening city</p>
+            <textarea rows="1" cols="100"></textarea><br>
+            <input type="submit" value="Submit" />
+            <script>
+                var fileDom = document.getElementById("file");
+                var previewDom = document.getElementById("preview");
+                fileDom.addEventListener("change", e => {
+                    var file = fileDom.files[0];
+                    if (!file || file.type.indexOf("image/") < 0) {
+                        fileDom.value = "";
+                        previewDom.src = "";
+                        return;
+                    }
+                    var fileReader = new FileReader();
+                    fileReader.onload = e => {
+                        previewDom.src = e.target.result;
+                    };
+                    fileReader.readAsDataURL(file);
+                });
+
+                function upload() {
+                    alert('Submit not implemented!');
+                    location.href = "./my_photos.htm";
+                    return false;
+                }
+            </script>
+        </form>
+    </div>
+
+
+
+    <!-- 页脚 -->
+    <footer>
+        Contact Us: 18307130214@fudan.edu.cn<br> Copyright &copy; 2020 Web fundamental. All Rights Reserved.
+    </footer>
+</body>

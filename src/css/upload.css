@@ -1,0 +1,20 @@
+#preview {
+    float: left;
+    width: 550px;
+    height: 550px;
+}
+
+#form {
+    width: 60%;
+    float: right;
+    font-size: 20px;
+}
+
+#title {
+    width: 80%
+}
+
+#description {
+    width: 80%;
+    height: 2em;
+}

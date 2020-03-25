@@ -1,0 +1,53 @@
+/* 主图部分样式 */
+
+body header {
+    background-image: url(../../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 250px 400px;
+    font-size: 50px;
+    text-align: center;
+    color: aqua;
+}
+
+
+/* 示例图部分样式 */
+
+table {
+    margin: 0;
+    background-color: gray;
+    width: 100%;
+}
+
+.sample img {
+    padding: 5% 10% 0 10%;
+    width: 80%;
+}
+
+.sample-title {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+}
+
+.sample-description {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+
+
+/* 辅助图标样式 */
+
+.tools {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.tools button {
+    height: 30px;
+    width: 80px;
+}

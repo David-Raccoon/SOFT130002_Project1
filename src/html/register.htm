@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Travel - Share your travels!
+    </title>
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/login.css" />
+</head>
+
+<body>
+    <!-- 头图 -->
+    <div class="login" onsubmit="return signin()">
+        <p class="title">Trevel - Register</p>
+        <form class="content">
+            <p>Username</p>
+            <input type="text" />
+            <p>E-mail</p>
+            <input type="text" />
+            <p>Password</p>
+            <input type="password" />
+            <p>Confirm Your Password</p>
+            <input type="password" /><br>
+            <input class="signin-button" type="submit" value="Sign in" />
+            <script>
+                function signin() {
+                    location.href = "./login.htm";
+                    return false;
+                }
+            </script>
+        </form>
+
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        Contact Us: 18307130214@fudan.edu.cn<br> Copyright &copy; 2020 Web fundamental. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
