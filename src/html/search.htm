@@ -6,6 +6,7 @@
     <title>
         Travel - Picture browser
     </title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/search.css" />
 </head>
@@ -13,31 +14,31 @@
 <body>
     <!-- 导航 -->
     <nav>
-        <a class="nav-options" href="../../index.htm">Home</a>
+        <a class="nav-options " href="../../index.htm">Home</a>
         <a class="nav-options" href="./browser.htm">Browse</a>
         <a class="nav-options current-options" href="./search.htm">Search</a>
-        <span class="nav-padding"></span>
-        <span class="nav-options dropdown">
+        <div class="nav-options dropdown">
             <span>My account</span>
-        <span class="dropdown-content">
-                <p>
+            <div class="dropdown-content">
+                <div>
                     <img class="nav-icons" src="../../img/icons/upload.png">
                     <a class="nav-options" href="./upload.htm">upload</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/my_photos.png">
                     <a class="nav-options" href="./my_photos.htm">my photos</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/favor.png">
                     <a class="nav-options" href="./favor.htm">favor</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/login.png">
                     <a class="nav-options" href="./login.htm">login</a>
-                </p>
-            </span>
-        </span>
+                </div>
+            </div>
+        </div>
+
     </nav>
     <!-- 横幅 -->
     <div class="banner">
@@ -49,72 +50,79 @@
             <input type="radio" name="method">Search by title<br>
             <input type="text" id="search_title">
         </div>
+        <div class="search-button">
+            <button onclick="alert('Search not implemented!')">Search</button>
+        </div>
         <div class="search-description">
             <input type="radio" name="method">Search by description<br>
             <input type="text" id="search_description">
         </div>
-        <div class="search-button">
-            <button onclick="alert('Search not implemented!')">Search</button>
-        </div>
+
     </div>
     <!-- 结果展示 -->
-    <div>
-        <table class="search-result">
-            <tr>
-                <td class>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg" height="200" width="200"></a>
-                </td>
-                <td class>
-                    <p class="title">Title</p>
-                    <p class="description">In U.S. English there is also a preferred way to develop the main points. If a person is writing about scuba diving, with main points on equipment and safety tips, he or she is expected to develop the point on equipment by talking
-                        only about equipment. Safety tips should not be mentioned in the midst of the discussion about equipment.
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td class>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg" height="200" width="200"></a>
-                </td>
-                <td class>
-                    <p class="title">Title</p>
-                    <p class="description">In U.S. English there is also a preferred way to develop the main points. If a person is writing about scuba diving, with main points on equipment and safety tips, he or she is expected to develop the point on equipment by talking
-                        only about equipment. Safety tips should not be mentioned in the midst of the discussion about equipment.
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td class>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg" height="200" width="200"></a>
-                </td>
-                <td class>
-                    <p class="title">Title</p>
-                    <p class="description">In U.S. English there is also a preferred way to develop the main points. If a person is writing about scuba diving, with main points on equipment and safety tips, he or she is expected to develop the point on equipment by talking
-                        only about equipment. Safety tips should not be mentioned in the midst of the discussion about equipment.
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td class>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg" height="200" width="200"></a>
-                </td>
-                <td class>
-                    <p class="title">Title</p>
-                    <p class="description">In U.S. English there is also a preferred way to develop the main points. If a person is writing about scuba diving, with main points on equipment and safety tips, he or she is expected to develop the point on equipment by talking
-                        only about equipment. Safety tips should not be mentioned in the midst of the discussion about equipment.
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <!-- 翻页 -->
-        <div class="pages">
-            <a class="page" href="">&lt;&lt;</a>
-            <a class="page" href="">1</a>
-            <a class="page" href="">2</a>
-            <a class="page" href="">3</a>
-            <a class="page" href="">4</a>
-            <a class="page" href="">5</a>
-            <a class="page" href="">&gt;&gt;</a>
+    <div class="search-result">
+        <div class="search-entry">
+            <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+            <div class>
+                <p class="title">Title</p>
+                <p class="description">In U.S. English there is also a preferred way to develop the main points. If a
+                    person is writing about scuba diving, with main points on equipment and safety tips, he or she is
+                    expected to develop the point on equipment by talking
+                    only about equipment. Safety tips should not be mentioned in the midst of the discussion about
+                    equipment.
+                </p>
+            </div>
+            <div class="clear"></div>
         </div>
+        <div class="search-entry">
+            <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+            <div class>
+                <p class="title">Title</p>
+                <p class="description">In U.S. English there is also a preferred way to develop the main points. If a
+                    person is writing about scuba diving, with main points on equipment and safety tips, he or she is
+                    expected to develop the point on equipment by talking
+                    only about equipment. Safety tips should not be mentioned in the midst of the discussion about
+                    equipment.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="search-entry">
+            <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+            <div class>
+                <p class="title">Title</p>
+                <p class="description">In U.S. English there is also a preferred way to develop the main points. If a
+                    person is writing about scuba diving, with main points on equipment and safety tips, he or she is
+                    expected to develop the point on equipment by talking
+                    only about equipment. Safety tips should not be mentioned in the midst of the discussion about
+                    equipment.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="search-entry">
+            <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+            <div class>
+                <p class="title">Title</p>
+                <p class="description">In U.S. English there is also a preferred way to develop the main points. If a
+                    person is writing about scuba diving, with main points on equipment and safety tips, he or she is
+                    expected to develop the point on equipment by talking
+                    only about equipment. Safety tips should not be mentioned in the midst of the discussion about
+                    equipment.
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- 翻页 -->
+    <div class="pages">
+        <a class="page" href="">&lt;&lt;</a>
+        <a class="page" href="">1</a>
+        <a class="page" href="">2</a>
+        <a class="page" href="">3</a>
+        <a class="page" href="">4</a>
+        <a class="page" href="">5</a>
+        <a class="page" href="">&gt;&gt;</a>
     </div>
     <!-- 页脚 -->
     <footer>

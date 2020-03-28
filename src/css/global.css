@@ -10,7 +10,7 @@
     background-image: url(../../img/home.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 30px 400px;
+    padding: 60px 400px;
     font-size: 50px;
     color: aqua;
     text-align: center;
@@ -31,7 +31,8 @@ nav {
 }
 
 .nav-options {
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     color: white;
 }
 
@@ -39,12 +40,9 @@ nav {
     color: aquamarine;
 }
 
-.nav-padding {
-    padding-left: 60%;
-}
-
 .dropdown {
-    position: relative;
+    position: absolute;
+    right: 0;
     display: inline-block;
 }
 
@@ -57,11 +55,11 @@ nav {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    padding-bottom: 1em;
 }
 
-.dropdown-options {
-    margin-top: 10px;
-    color: aqua;
+.dropdown-content div{
+    padding-top: 1em;
 }
 
 .current-options {
@@ -94,6 +92,8 @@ footer {
     text-align: center;
     width: 100%;
     color: white;
+    background-color: black;
+    font-weight: bolder;
     bottom: 0;
     clear: both;
 }

@@ -6,8 +6,32 @@
 }
 
 .entry-box {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1px;
     width: 100%;
-    height: 25px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius:10px;
+}
+
+.entry-box input {
+    width: 70%;
+}
+
+.search {
+    height: 100%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(0, 153, 255);
+    border-radius:5px;
+}
+.search:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
 }
 
 .entry-title {
@@ -18,6 +42,8 @@
     margin-left: 30%;
     margin-top: 2%;
     font-size: 40px;
+    border: 2px solid black;
+    border-radius:10px;
 }
 
 .filter-title {
@@ -27,6 +53,9 @@
 
 .filter-options {
     text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 1%;
 }
 
 .filter-options .selector {
@@ -34,10 +63,37 @@
     width: 20%;
 }
 
+button.selector {
+    height: 100%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(0, 153, 255);
+    border-radius:5px;
+}
+button.selector:hover {
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+
 .filter-result {
+    margin-top: 1%;
     margin-left: 10%;
     width: 80%;
     margin-right: 10%;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+}
+
+td img{
+    width: 180px;
+    padding: 5px;
 }
 
 .page {

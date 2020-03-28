@@ -6,6 +6,7 @@
     <title>
         Travel - Picture browser
     </title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/upload.css" />
 </head>
@@ -13,39 +14,44 @@
 <body>
     <!-- 导航 -->
     <nav>
-        <a class="nav-options" href="../../index.htm">Home</a>
+        <a class="nav-options " href="../../index.htm">Home</a>
         <a class="nav-options" href="./browser.htm">Browse</a>
         <a class="nav-options" href="./search.htm">Search</a>
-        <span class="nav-padding"></span>
-        <span class="nav-options current-options dropdown">
+        <div class="nav-options dropdown">
             <span>My account</span>
-        <span class="dropdown-content">
-                <p>
+            <div class="dropdown-content">
+                <div>
                     <img class="nav-icons" src="../../img/icons/upload.png">
                     <a class="nav-options current-options" href="./upload.htm">upload</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/my_photos.png">
                     <a class="nav-options" href="./my_photos.htm">my photos</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/favor.png">
                     <a class="nav-options" href="./favor.htm">favor</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/login.png">
                     <a class="nav-options" href="./login.htm">login</a>
-                </p>
-            </span>
-        </span>
+                </div>
+            </div>
+        </div>
+
     </nav>
     <!-- 横幅 -->
     <div class="banner">
         <p>Travel - Share your travels!</p>
     </div>
     <!-- 上传 -->
-    <div>
-        <img id="preview" alt="Photo not selected." />
+    <div class="upload">
+        <div class="display">
+            <p>
+                <img id="preview" class="hidden"/>
+                <img id="subPreview" />
+            </p>
+        </div>
         <form id="form" onsubmit="return upload()">
             <p>Choose a photo</p>
             <input type="file" accept="image/*" id="file" />
@@ -57,10 +63,12 @@
             <textarea rows="1" cols="100"></textarea>
             <p>Screening city</p>
             <textarea rows="1" cols="100"></textarea><br>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" class="submit"/>
             <script>
                 var fileDom = document.getElementById("file");
                 var previewDom = document.getElementById("preview");
+                var subPreviewDom = document.getElementById("subPreview");
+                var infoDom = document.getElementById("info");
                 fileDom.addEventListener("change", e => {
                     var file = fileDom.files[0];
                     if (!file || file.type.indexOf("image/") < 0) {
@@ -71,6 +79,9 @@
                     var fileReader = new FileReader();
                     fileReader.onload = e => {
                         previewDom.src = e.target.result;
+                        previewDom.height = 400;
+                        subPreviewDom.src = e.target.result;
+                        subPreviewDom.height = 400;
                     };
                     fileReader.readAsDataURL(file);
                 });
@@ -82,9 +93,8 @@
                 }
             </script>
         </form>
+        <div class="clear"></div>
     </div>
-
-
 
     <!-- 页脚 -->
     <footer>

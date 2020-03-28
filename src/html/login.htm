@@ -6,6 +6,7 @@
     <title>
         Travel - Share your travels!
     </title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/login.css" />
 </head>
@@ -15,10 +16,14 @@
     <div class="login" onsubmit="return signin()">
         <p class="title">Trevel - Login</p>
         <form class="content">
-            <p>Username/E-mail</p>
-            <input type="text" />
-            <p>Password</p>
-            <input type="password" /><br>
+            <div class="login-entry">
+                <p>Username/E-mail</p>
+                <input type="text" />
+            </div>
+            <div class="login-entry">
+                <p>Password</p>
+                <input type="password" />
+            </div>
             <input class="signin-button" type="submit" value="Sign in" />
             <script>
                 function signin() {

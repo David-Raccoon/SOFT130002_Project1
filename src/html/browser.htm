@@ -6,6 +6,7 @@
     <title>
         Travel - Picture browser
     </title>
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/browser.css" />
     <script src="../js/cities.js"></script>
@@ -17,28 +18,28 @@
         <a class="nav-options" href="../../index.htm">Home</a>
         <a class="nav-options current-options" href="./browser.htm">Browse</a>
         <a class="nav-options" href="./search.htm">Search</a>
-        <span class="nav-padding"></span>
-        <span class="nav-options dropdown">
+        <div class="nav-options dropdown">
             <span>My account</span>
-        <span class="dropdown-content">
-                <p>
+            <div class="dropdown-content">
+                <div>
                     <img class="nav-icons" src="../../img/icons/upload.png">
                     <a class="nav-options" href="./upload.htm">upload</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/my_photos.png">
                     <a class="nav-options" href="./my_photos.htm">my photos</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/favor.png">
                     <a class="nav-options" href="./favor.htm">favor</a>
-                </p>
-                <p>
+                </div>
+                <div>
                     <img class="nav-icons" src="../../img/icons/login.png">
                     <a class="nav-options" href="./login.htm">login</a>
-                </p>
-            </span>
-        </span>
+                </div>
+            </div>
+        </div>
+
     </nav>
     <!-- 横幅 -->
     <div class="banner">
@@ -50,7 +51,7 @@
             <div class="entry-box entry-title">Search by Title</div>
             <div class="entry-box">
                 <input type="text" id="keyword" value="" />
-                <button onclick="search()">search</button>
+                <button class="search" onclick="search()">search</button>
                 <script>
                     function search() {
                         var keyword = document.getElementById("keyword");
@@ -130,58 +131,58 @@
         <table class="filter-result">
             <tr>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
-                </td>
-                <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
-                </td>
-                <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
-                </td>
-                <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
                 <td>
-                    <a href="./detail.htm"><img src="../../img/square/square-medium/222222.jpg"></a>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+                </td>
+                <td>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+                </td>
+                <td>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
+                </td>
+                <td>
+                    <a href="./detail.htm"><img src="../../img/demo.jpg"></a>
                 </td>
             </tr>
         </table>
