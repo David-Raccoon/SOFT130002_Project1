@@ -8,89 +8,32 @@
     </title>
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/global.css" />
-    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/login.css" />
 </head>
 
 <body>
-    <!-- 导航 -->
-    <nav>
-        <a class="nav-options current-options" href="src/html/index.htm">Home</a>
-        <a class="nav-options" href="src/html/browser.htm">Browse</a>
-        <a class="nav-options" href="src/html/search.htm">Search</a>
-        <div class="nav-options dropdown">
-            <span>My account</span>
-            <div class="dropdown-content">
-                <div>
-                    <img class="nav-icons" src="img/icons/upload.png">
-                    <a class="nav-options" href="src/html/upload.htm">upload</a>
-                </div>
-                <div>
-                    <img class="nav-icons" src="img/icons/my_photos.png">
-                    <a class="nav-options" href="src/html/my_photos.htm">my photos</a>
-                </div>
-                <div>
-                    <img class="nav-icons" src="img/icons/favor.png">
-                    <a class="nav-options" href="src/html/favor.htm">favor</a>
-                </div>
-                <div>
-                    <img class="nav-icons" src="img/icons/login.png">
-                    <a class="nav-options" href="src/html/login.htm">login</a>
-                </div>
-            </div>
-        </div>
-
-    </nav>
     <!-- 头图 -->
-    <header>
-        <p class="title">Trevel - Share your travels!</p>
-    </header>
-    <!-- 主体 一些示例图 -->
-    <table>
-        <tr>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-            <td class="sample">
-                <a href="src/html/detail.htm"><img src="img/demo.jpg"></a>
-                <p class="sample-title">title</p>
-                <p class="sample-description">description</p>
-            </td>
-        </tr>
-    </table>
-    <!-- 辅助图标 -->
-    <div class="tools">
-        <button onclick="alert('Picture refreshed!')">refresh</button>
-        <button id="jump">top
+    <div class="login" onsubmit="return signin()">
+        <p class="title">Trevel - Login</p>
+        <form class="content">
+            <div class="login-entry">
+                <p>Username/E-mail</p>
+                <input type="text" />
+            </div>
+            <div class="login-entry">
+                <p>Password</p>
+                <input type="password" />
+            </div>
+            <input class="signin-button" type="submit" value="Sign in" />
             <script>
-                jump.onclick = function () {
-                    scrollTo(0, 0);
+                function signin() {
+                    location.href = "./src/html/my_photos.htm";
+                    return false;
                 }
             </script>
-        </button>
+            <p>New to travel? <a href="./src/html/register.htm">Click here create a new account.</a></p>
+        </form>
+
     </div>
     <!-- 页脚 -->
     <footer>

@@ -1,4 +1,4 @@
-.upload{
+.upload {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
@@ -37,19 +37,19 @@
     position: static;
 }
 
-#form{
+#form {
     float: right;
 }
 
-#form p{
+#form p {
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-#form .submit{
+#form .submit {
     margin-top: 3%;
     height: 4em;
-    width: 10%;    
+    width: 10em;
     font-size: 20px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -65,10 +65,10 @@
     color: white;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-footer{
+footer {
     position: fixed;
 }
