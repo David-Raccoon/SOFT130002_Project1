@@ -15,7 +15,6 @@ body header {
 
 table {
     margin: 0;
-    background-color: gray;
     width: 100%;
     margin-bottom: 5%;
 }
@@ -27,14 +26,12 @@ table {
 
 .sample-title {
     margin: 0;
-    color: white;
     text-align: center;
     font-size: 200%;
 }
 
 .sample-description {
     margin: 0;
-    color: white;
     text-align: center;
     font-size: 150%;
 }
